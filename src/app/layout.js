@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 
 //configure the font properties. You can add more properties, if you want
 //check the font index by pressing cmd + click
-const playfair = Playfair({ subsets: ["latin"], weight: "variable" });
+const playfair = Playfair({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Coaster Rollers",

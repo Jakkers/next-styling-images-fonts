@@ -2,6 +2,8 @@
 import Image from "next/image";
 //import local image from public
 import mountain from "@/../public/mountain.jpg";
+//import my animation component
+import Animation from "@/components/Animation";
 
 export default function Home() {
   return (
@@ -10,6 +12,7 @@ export default function Home() {
         Coaster Rollers
       </h1>
       <main>
+        <Animation />
         {/* <Image
         src="https://images.unsplash.com/photo-1720459963979-1a6b9ad26bb2?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="An image of a roller coaster"

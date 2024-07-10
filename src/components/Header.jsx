@@ -5,7 +5,9 @@ export default function Header() {
   return (
     <>
       <nav className={HeaderStyles.nav}>
-        <Link href="/">Home</Link> | <Link href="/rollers">Rollers</Link>
+        <Link href="/">Home</Link> | <Link href="/rollers">Rollers</Link> |{" "}
+        <Link href="/animations">Animations</Link> |{" "}
+        <Link href="/mountains">Mountains</Link>
       </nav>
     </>
   );

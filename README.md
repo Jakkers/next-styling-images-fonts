@@ -38,3 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Attributions
 
 - Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marek Piwnicki</a> on <a href="https://unsplash.com/photos/a-bird-flying-over-a-mountain-range-at-sunset-RlReZgrueYs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+- Mountains data: https://www.muchbetteradventures.com/magazine/highest-mountains-in-the-world-top-10/
