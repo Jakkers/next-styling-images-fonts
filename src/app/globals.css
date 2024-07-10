@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* :root is a pseudo-class which targets the root of our app  */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -11,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 10, 10, 10;
     --background-end-rgb: 0, 0, 0;
   }
 }
