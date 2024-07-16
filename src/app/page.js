@@ -4,6 +4,7 @@ import Image from "next/image";
 import mountain from "@/../public/mountain.jpg";
 //import my animation component
 import Animation from "@/components/Animation";
+import PopoverDemo from "@/components/PopoverDemo";
 
 export default function Home() {
   return (
@@ -13,13 +14,7 @@ export default function Home() {
       </h1>
       <main>
         <Animation />
-        {/* <Image
-        src="https://images.unsplash.com/photo-1720459963979-1a6b9ad26bb2?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="An image of a roller coaster"
-        width={800}
-        height={600}
-      /> */}
-        {/* we can use blur in local images by default   */}
+        <PopoverDemo />
         <Image
           src={mountain}
           alt="A beautiful yellow mountain scape "

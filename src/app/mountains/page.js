@@ -3,7 +3,7 @@ import { dbConnect } from "@/utils/dbConnection";
 export default async function MountainPage() {
   const db = dbConnect();
   const mountains = (await db.query(`SELECT * FROM mountains`)).rows;
-  console.log(mountains);
+  //   console.log(mountains);
 
   return (
     <>

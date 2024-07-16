@@ -3,11 +3,10 @@
 //import dbConnect from dbConnection
 import { dbConnect } from "@/utils/dbConnection";
 
-export default async function RollerIdPage({ params }) {
-  // const result = await fetch(`https://dummyjson.com/carts/${params.rollerId}`);
-  // const data = await result.json();
-  // const wrangledData = data.products;
+//import not-found
+import { notFound } from "next/navigation";
 
+export default async function RollerIdPage({ params }) {
   //call the dbConnect function, so the connecttion to the db is working
   const db = dbConnect();
   const oneRoller = (
@@ -15,7 +14,14 @@ export default async function RollerIdPage({ params }) {
       `SELECT * FROM coaster_rollers WHERE id = ${params.rollerId}`
     )
   ).rows;
-  console.log(oneRoller);
+
+  //we want our app to display the not-found page only when there is not a param matching the database id
+
+  //when we query the database, we get an array with one item, so the length property is 1
+  // if the length is 0, it means that the array is empty
+  if (oneRoller.length === 0) {
+    notFound();
+  }
 
   return (
     <>

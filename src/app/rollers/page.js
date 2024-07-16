@@ -31,16 +31,6 @@ export default async function RollersPage() {
             <p>Country: {item.height}</p>
           </div>
         ))}
-        {/* {rollers.map((item) =>
-          item.products.map((data) => (
-            <div
-              key={data.id}
-              className="bg-yellow-400 text-gray-900 font-bold rounded-lg p-4 cursor-pointer transition-colors hover:opacity-20"
-            >
-              {data.name}
-            </div>
-          ))
-        )} */}
       </div>
     </>
   );
